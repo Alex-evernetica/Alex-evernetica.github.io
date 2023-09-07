@@ -1,0 +1,41 @@
+@import "src/assets/colors";
+
+.enableHookesPage {
+  background-color: white;
+  padding: 0 15px;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+
+  &__headerContainer {
+    margin-bottom: 14px;
+  }
+}
+
+.textContainer {
+  margin-bottom: 32px;
+  &__title {
+    color: $textBlack;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+
+  &__text {
+    color: $textBlack;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+}
+
+.privacyLink {
+  color: $textBlack;
+  text-decoration: underline;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
