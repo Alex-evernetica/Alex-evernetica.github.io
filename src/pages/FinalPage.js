@@ -2,9 +2,6 @@ import React from 'react'
 import HookesHeader from '../components/HookesHeader/HookesHeader'
 import Cool from '../assets/icons/Cool.png'
 import './EnableHookesPage/EnableHookesPage.scss'
-// public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-//   return RCTLinkingManager.application(app, open: url, options: options)
-// }
 const FinalPage = () => {
   return (
     <div className={'enableHookesPage flexWrapper'}>
@@ -20,7 +17,7 @@ const FinalPage = () => {
           We’ll apply saving automatically as you shop on more than 40,000 stores. Enjoy!
         </span>
         <div className={'buttonDiv'}>
-          <a href="com.hookes.dev://app/WelcomeInScreen" className={'linkToApp'}>Return to APP</a>
+          <a href="com.hookes.dev://WelcomeInScreen" className={'linkToApp'}>Return to APP</a>
         </div>
       </div>
 
