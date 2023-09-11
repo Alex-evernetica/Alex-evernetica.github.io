@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './EnableHookesPage.scss'
 
 import HookesHeader from "../../components/HookesHeader/HookesHeader";
@@ -7,8 +7,18 @@ import puzzle from '../../assets/icons/puzzle.svg';
 import safariToolBar from '../../assets/icons/safari-tool-bar.svg';
 import toggle from '../../assets/icons/toggle.svg';
 import HookesItem from "../../components/HookesItem/HookesItem";
+import {useNavigate} from "react-router-dom";
 
 const EnableHookesPage = () => {
+    const element = document.getElementById('actionButton')
+    const navigation = useNavigate()
+    useEffect(()=>{
+        if (element?.innerHTML) {
+
+            navigation('/finalPage')
+        }
+    }, [element, navigation])
+
     const text1 = [
         <span key="1">1. Tap the </span>,
         <strong key="2">aA</strong>,

@@ -13,6 +13,7 @@
 
 .textContainer {
   margin-bottom: 32px;
+
   &__title {
     color: $textBlack;
     font-size: 24px;
@@ -38,4 +39,44 @@
   flex-direction: column;
   gap: 24px;
   margin-bottom: 32px;
+
+  .hookesItem__icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.finalDescription {
+  margin-top: 8px;
+  display: block;
+  color: #1A1B27;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.finalContentWrapper {
+  margin-top: -16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
 }

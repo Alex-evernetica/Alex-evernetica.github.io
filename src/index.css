@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h1 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+.greyContainer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  margin-bottom: 10px;
+}
+.imagePng {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.mainImg {
+  height: 50px;
+}
+
+.mainIconDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+}
+
+.coolImg {
+  height: 150px;
+}
+
+.finalText {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.linkToApp {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.buttonDiv {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  background-color: black;
+  border-radius: 26px;
+}

@@ -5,13 +5,19 @@ interface HookesItemProps {
     text: React.ReactNode[];
     image: string;
     imageClassname?: string;
+    children?: React.ReactNode;
 }
 
-const hookesItem: React.FC<HookesItemProps> = ({text, image, imageClassname}) => {
+const hookesItem: React.FC<HookesItemProps> = ({text, image, imageClassname, children}) => {
     return (
         <div className={'hookesItem'}>
             <div className={'hookesItem__text'}>{text}</div>
-            <img className={imageClassname} src={image} alt={'Hookes item image'}/>
+            {
+                image &&(
+                    <img className={imageClassname} src={image} alt={'Hookes item image'}/>
+                )
+            }
+            {children}
         </div>
     );
 }
