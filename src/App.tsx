@@ -1,5 +1,5 @@
 import React from 'react';
-import {RouterProvider, createBrowserRouter, Route} from 'react-router-dom';
+import {RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom';
 import EnableHookesPage from "./pages/EnableHookesPage/EnableHookesPage";
 import SecondPage from "./pages/SecondPage";
 import FinalPage from "./pages/FinalPage";
@@ -8,7 +8,7 @@ import FinalPage from "./pages/FinalPage";
 // <Route path="/secondStep" element={<SecondPage/>}/>
 // <Route path="/finalPage" element={<FinalPage/>}/>
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         children: [
@@ -17,11 +17,11 @@ const router = createBrowserRouter([
                 element: <EnableHookesPage/>,
             },
             {
-                path: "secondStep",
+                path: "/secondStep",
                 element: <SecondPage/>,
             },
             {
-                path: "finalPage",
+                path: "/finalPage",
                 element: <FinalPage/>,
             },
         ],

@@ -4,8 +4,8 @@ import './EnableHookesPage.scss'
 import HookesHeader from "../../components/HookesHeader/HookesHeader";
 
 import puzzle from '../../assets/icons/puzzle.svg';
-import safariToolBar from '../../assets/icons/safari-tool-bar.svg';
-import toggle from '../../assets/icons/toggle.svg';
+import safariToolBar from '../../assets/icons/Aa.png';
+import toggle from '../../assets/icons/Switch.png';
 import HookesItem from "../../components/HookesItem/HookesItem";
 import {useNavigate} from "react-router-dom";
 
@@ -58,7 +58,7 @@ const EnableHookesPage = () => {
             <div className={'itemsContainer'}>
                 <HookesItem text={text1} image={safariToolBar} imageClassname={'hookesItem__image'}/>
                 <HookesItem text={text2} image={puzzle} />
-                <HookesItem text={text3} image={toggle} />
+                <HookesItem text={text3} image={toggle} imageClassname={'hookesItem__image_switch'} />
             </div>
         </div>
     );

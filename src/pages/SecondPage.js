@@ -52,7 +52,7 @@ const SecondStep = () => {
 
       <div className={'textContainer'}>
         <span className={'textContainer__title'}>Always allow...</span>
-        <br/>
+
         <span className={'textContainer__text'}>
                     To pop up at checkout, we need to be available! You can update these preferences in your iOS setting.
         </span>

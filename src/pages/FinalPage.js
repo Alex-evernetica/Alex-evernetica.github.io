@@ -10,6 +10,7 @@ const FinalPage = () => {
       </div>
       <div className={"finalContentWrapper"}>
         <div className={'mainIconDiv'}>
+          <span role="img" aria-label="dog" className={'emoji'}>🤘</span>
           <img src={Cool} alt={'aA'} className={'coolImg'}/>
         </div>
         <h1 className={'finalText'}>You’ve enabled Hookes!</h1>
