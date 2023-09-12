@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.96b13e50.css",
-    "main.js": "/static/js/main.db3e5bea.js",
+    "main.css": "/static/css/main.5024ec4c.css",
+    "main.js": "/static/js/main.05a34bed.js",
     "static/js/787.a3b67ef6.chunk.js": "/static/js/787.a3b67ef6.chunk.js",
+    "static/media/Switch.png": "/static/media/Switch.d8addf89a2d954dd3d49.png",
+    "static/media/Aa.png": "/static/media/Aa.b0d1675b4575c83c2b05.png",
     "static/media/Cool.png": "/static/media/Cool.03938bb8a96762ea1fe3.png",
     "static/media/AAonWeb.png": "/static/media/AAonWeb.1e7ad4c0c0c5b8163026.png",
     "static/media/puzzle.svg": "/static/media/puzzle.87f75735e055892aaf44bf4cab579b40.svg",
     "static/media/HOOKES.svg": "/static/media/HOOKES.90731befda834c52e6ab64a3a22cb494.svg",
-    "static/media/safari-tool-bar.svg": "/static/media/safari-tool-bar.d0734df7240c27a8793f9992819468fe.svg",
-    "static/media/toggle.svg": "/static/media/toggle.c5976a8043ecd1dd5a7d42fa87fd0a80.svg",
     "index.html": "/index.html",
-    "main.96b13e50.css.map": "/static/css/main.96b13e50.css.map",
-    "main.db3e5bea.js.map": "/static/js/main.db3e5bea.js.map",
+    "main.5024ec4c.css.map": "/static/css/main.5024ec4c.css.map",
+    "main.05a34bed.js.map": "/static/js/main.05a34bed.js.map",
     "787.a3b67ef6.chunk.js.map": "/static/js/787.a3b67ef6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b13e50.css",
-    "static/js/main.db3e5bea.js"
+    "static/css/main.5024ec4c.css",
+    "static/js/main.05a34bed.js"
   ]
 }
