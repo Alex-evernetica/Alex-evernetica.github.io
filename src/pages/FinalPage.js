@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import HookesHeader from '../components/HookesHeader/HookesHeader'
-import Cool from '../assets/icons/Cool.png'
 import './EnableHookesPage/EnableHookesPage.scss'
+import { NavigationContext } from '../App'
 const FinalPage = () => {
+  const { backUrl } = useContext(NavigationContext)
+  const backUrlPath = sessionStorage.getItem('backUrl') || backUrl
   return (
     <div className={'enableHookesPage flexWrapper'}>
       <div className={'enableHookesPage__headerContainer'}>
@@ -11,14 +13,13 @@ const FinalPage = () => {
       <div className={"finalContentWrapper"}>
         <div className={'mainIconDiv'}>
           <span role="img" aria-label="dog" className={'emoji'}>🤘</span>
-          <img src={Cool} alt={'aA'} className={'coolImg'}/>
         </div>
         <h1 className={'finalText'}>You’ve enabled Hookes!</h1>
         <span className={'finalDescription'}>
           We’ll apply saving automatically as you shop on more than 40,000 stores. Enjoy!
         </span>
         <div className={'buttonDiv'}>
-          <a href="com.hookes.dev://WelcomeInScreen" className={'linkToApp'}>Return to APP</a>
+          <a href={`com.hookes.dev://` + backUrlPath} className={'linkToApp'}>Return to APP</a>
         </div>
       </div>
 

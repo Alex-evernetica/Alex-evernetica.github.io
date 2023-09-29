@@ -33,6 +33,14 @@ const SecondStep = () => {
     return () => clearInterval(tickElementCheck)
   }, [])
 
+  useEffect(() => {
+    const sessionIsUpdated = sessionStorage.getItem('isUpdated')
+    if (!sessionIsUpdated) {
+      window.location.reload()
+      sessionStorage.setItem('isUpdated', true)
+    }
+  }, [])
+
   // useEffect(() => {
   //   if (element?.innerHTML) {
   //     navigation('/safari-ext-helper/finalPage')

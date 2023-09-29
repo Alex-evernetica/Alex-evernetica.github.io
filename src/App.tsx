@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createContext, useEffect, useState} from 'react';
 import {RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom';
 import EnableHookesPage from "./pages/EnableHookesPage/EnableHookesPage";
 import SecondPage from "./pages/SecondPage";
@@ -28,12 +28,38 @@ const router = createHashRouter([
     },
 ]);
 
-function App() {
-    return (
-        <RouterProvider router={router} />
-    );
+type RouterType = {
+    backUrl: string;
+    setBackUrl: (url: string) => void;
 }
 
+const contextInitialState: RouterType = {
+    backUrl: "",
+    setBackUrl: () => null
+}
+export const NavigationContext = createContext<RouterType>(contextInitialState);
+
+function App() {
+    const [backUrl, setBackUrl] = useState("")
+    console.log("backUrl");
+    console.log(backUrl);
+
+    useEffect(() => {
+        let params = new URLSearchParams(document.location.search);
+        let backUrlValue = params.get("backUrl");
+        if (backUrlValue) {
+            setBackUrl(backUrlValue || "")
+            sessionStorage.setItem("backUrl", backUrlValue || "")
+        }
+    }, [])
+
+
+    return (
+        <NavigationContext.Provider value={{backUrl, setBackUrl}}>
+            <RouterProvider router={router}/>
+        </NavigationContext.Provider>
+    );
+}
 
 
 export default App;
