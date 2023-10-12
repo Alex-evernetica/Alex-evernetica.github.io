@@ -11,13 +11,13 @@ import {useNavigate} from "react-router-dom";
 
 const EnableHookesPage = () => {
     const element = document.getElementById('actionButton')
-    const navigation = useNavigate()
+    const navigate = useNavigate()
     useEffect(()=>{
         if (element?.innerHTML) {
 
-            navigation('/finalPage')
+            navigate('/finalPage')
         }
-    }, [element, navigation])
+    }, [element, navigate])
 
     const text1 = [
         <span key="1">1. Tap the </span>,
@@ -36,6 +36,13 @@ const EnableHookesPage = () => {
         <span key="3"> and select </span>,
         <strong key="4">“Done”</strong>,
     ];
+
+    useEffect(() => {
+       const  hookesProgreesUrl =    localStorage.getItem('hookesProgreesUrl')
+        if (hookesProgreesUrl) {
+            navigate(hookesProgreesUrl)
+        }
+    }, [navigate])
 
     return (
         <div className={'enableHookesPage'}>

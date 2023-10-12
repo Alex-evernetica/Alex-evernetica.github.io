@@ -41,6 +41,9 @@ const SecondStep = () => {
     }
   }, [])
 
+  useEffect(() => {
+    localStorage.setItem('hookesProgreesUrl', '/secondStep')
+  } , [])
   // useEffect(() => {
   //   if (element?.innerHTML) {
   //     navigation('/safari-ext-helper/finalPage')
