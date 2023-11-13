@@ -102,8 +102,24 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.imagePng{
-  width: 100%;
-  max-width: 284px;
-  height: auto;
+.imageAA{
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  width: 130px;
+  margin: -12px 10px 0;
+  height: 32px;
+}
+.imageAAEvery{
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  width: 227px;
+  margin: -12px 10px 0;
+  height: 32px;
+}
+.imageArrow{
+  display: inline-block;
+  position: relative;
+  left: 100px;
 }

@@ -3,25 +3,35 @@ import { useNavigate } from 'react-router-dom'
 import HookesHeader from '../components/HookesHeader/HookesHeader'
 import './EnableHookesPage/EnableHookesPage.scss'
 import HookesItem from '../components/HookesItem/HookesItem'
-import HookesIcon from '../assets/icons/Skeleton.png'
-import AlwaysAllow from '../assets/icons/AlwayAllow.png'
-import AAonWeb from '../assets/icons/AAonWeb.png'
+import AlwaysAllow from '../assets/icons/AlwayAllow.svg'
+import aaIcon from '../assets/icons/AaIcon.svg';
+import aAonEvery from '../assets/icons/aAonEvery.svg';
+import exclamationPoint from '../assets/icons/exclamationPoint.svg';
 
 const SecondStep = () => {
   // const element = document.getElementById('actionButton')
   const navigation = useNavigate()
   // console.log(element)
   const text1 = [
-    <span key="1">4. Tap the </span>,
-    <strong key="2">Hookes Extension</strong>,
+    <span key="1">1. Tap the </span>,
+    <img key="2" className={'hookesItem__image'} src={aaIcon} alt={'Hookes item image'}/>,
+    <span key="3">in the address bar</span>,
   ]
 
   const text2 = [
-    <span key="1">5. Tap </span>,
-    <strong key="2">Always allow... <br/>
-      Always allow, on every website</strong>,
+    <span key="1">2. Tap the </span>,
+    <img key="2" className={'hookesItem__image'} src={exclamationPoint} alt={'Hookes item image'}/>,
+    <span key="3">by the </span>,
+    <strong key="4">"Hookes" extension</strong>,
   ]
-
+  const text3 = [
+    <span key="1">3. Then select</span>,
+    <img key="2" className={'imageAA'} src={AlwaysAllow} alt={'aA'}/>,
+  ]
+  const text4 = [
+    <span key="1">4. And</span>,
+    <img key="2" className={'imageAAEvery'} src={aAonEvery} alt={'aAonEvery'}/>,
+  ]
   useEffect(() => {
     const tickElementCheck = setInterval(() => {
       const element = document.getElementById('actionButton')
@@ -62,20 +72,17 @@ const SecondStep = () => {
       </div>
 
       <div className={'textContainer'}>
-        <span className={'textContainer__title'}>Always allow...</span>
+        <span className={'textContainer__title'}>Always allow, on every website.</span>
 
         <span className={'textContainer__text'}>
                     To pop up at checkout, we need to be available! You can update these preferences in your iOS setting.
         </span>
       </div>
       <div className={'itemsContainer'} id={"triggerPermissionCheck"} onClick={handleClick} >
-        <HookesItem text={text1} image={HookesIcon} imageClassname={'hookesItem__icon'}/>
-        <HookesItem text={text2}>
-          <img src={AlwaysAllow}
-               alt={'aA'}
-               className={'imagePng'}/>
-          <img src={AAonWeb} alt={'aA'} className={'imagePng'}/>
-        </HookesItem>
+        <HookesItem text={text1}/>
+        <HookesItem text={text2}/>
+        <HookesItem text={text3}/>
+        <HookesItem text={text4}/>
       </div>
     </div>
   )
