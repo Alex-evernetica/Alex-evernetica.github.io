@@ -22,12 +22,10 @@ const EnableHookesPage = () => {
     const text1 = [
         <span key="1">1. Tap the</span>,
         <img className={'hookesItem__image'} src={aaIcon} alt={'Hookes item image'}/>,
-        <span key="2">in the address bar,<br /></span>,
-        <div key="3" className={'hookesItem__secondParagraph'}>
-          <span >then go to </span>
-          <strong>Manage Extensions</strong>
-          <img className={'hookesItem__image'} src={blackPuzzle} alt={'Hookes item image'}/>
-        </div>,
+        <span key="2">in the address bar, </span>,
+        <span >then go to </span>,
+        <strong>Manage Extensions</strong>,
+        <img className={'hookesItem__image'} src={blackPuzzle} alt={'Hookes item image'}/>,
     ];
     const text2 = [
       <span key="1">2. Toggle on </span>,
