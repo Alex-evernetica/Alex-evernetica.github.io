@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5024ec4c.css",
-    "main.js": "/static/js/main.acab66ac.js",
-    "static/js/787.a3b67ef6.chunk.js": "/static/js/787.a3b67ef6.chunk.js",
+    "main.css": "/static/css/main.1f7b3a32.css",
+    "main.js": "/static/js/main.f7dd2683.js",
+    "static/js/787.2afa3daa.chunk.js": "/static/js/787.2afa3daa.chunk.js",
     "static/media/Switch.png": "/static/media/Switch.d8addf89a2d954dd3d49.png",
-    "static/media/Aa.png": "/static/media/Aa.b0d1675b4575c83c2b05.png",
-    "static/media/AAonWeb.png": "/static/media/AAonWeb.1e7ad4c0c0c5b8163026.png",
-    "static/media/puzzle.svg": "/static/media/puzzle.87f75735e055892aaf44bf4cab579b40.svg",
+    "static/media/aAonEvery.svg": "/static/media/aAonEvery.10750306e3916f4c5d051ffde17ee877.svg",
+    "static/media/AaIcon.svg": "/static/media/AaIcon.86567a489ac58c8b03b9624875d14d03.svg",
+    "static/media/BlackPuzzle.svg": "/static/media/BlackPuzzle.2445a508f32fc8be8d038b103f8e8f50.svg",
     "static/media/HOOKES.svg": "/static/media/HOOKES.90731befda834c52e6ab64a3a22cb494.svg",
+    "static/media/AlwayAllow.svg": "/static/media/AlwayAllow.8ee0d4f41173ce1245f878cc5f391207.svg",
+    "static/media/exclamationPoint.svg": "/static/media/exclamationPoint.50154087ee343cebc491c65436f19e92.svg",
     "index.html": "/index.html",
-    "main.5024ec4c.css.map": "/static/css/main.5024ec4c.css.map",
-    "main.acab66ac.js.map": "/static/js/main.acab66ac.js.map",
-    "787.a3b67ef6.chunk.js.map": "/static/js/787.a3b67ef6.chunk.js.map"
+    "static/media/arrow-right.svg": "/static/media/arrow-right.d5bd4fd73a2624beb241255c679302d1.svg",
+    "main.1f7b3a32.css.map": "/static/css/main.1f7b3a32.css.map",
+    "main.f7dd2683.js.map": "/static/js/main.f7dd2683.js.map",
+    "787.2afa3daa.chunk.js.map": "/static/js/787.2afa3daa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5024ec4c.css",
-    "static/js/main.acab66ac.js"
+    "static/css/main.1f7b3a32.css",
+    "static/js/main.f7dd2683.js"
   ]
 }
