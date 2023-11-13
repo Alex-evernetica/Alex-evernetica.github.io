@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import HookesHeader from '../components/HookesHeader/HookesHeader'
 import './EnableHookesPage/EnableHookesPage.scss'
+import arrowRight from '../assets/icons/arrow-right.svg';
 import { NavigationContext } from '../App'
 const FinalPage = () => {
   const { backUrl } = useContext(NavigationContext)
@@ -12,14 +13,15 @@ const FinalPage = () => {
       </div>
       <div className={"finalContentWrapper"}>
         <div className={'mainIconDiv'}>
-          <span role="img" aria-label="dog" className={'emoji'}>🤘</span>
+          <span role="img" aria-label="dog" className={'emoji'}>🥳</span>
         </div>
-        <h1 className={'finalText'}>You’ve enabled Hookes!</h1>
+        <h1 className={'finalText'}>You're all set!</h1>
         <span className={'finalDescription'}>
-          We’ll apply saving automatically as you shop on more than 40,000 stores. Enjoy!
+          Get ready to find coupons<br/> and save automatically as you shop<br/> at your favourite stores.
         </span>
         <div className={'buttonDiv'}>
           <a href={`com.hookes.dev://` + backUrlPath} className={'linkToApp'}>Return to APP</a>
+            <img src={arrowRight} className={'imageArrow'} alt={'arrowIcon'}/>
         </div>
       </div>
 
