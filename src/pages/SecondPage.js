@@ -83,6 +83,7 @@ const SecondStep = () => {
         <HookesItem text={text2}/>
         <HookesItem text={text3}/>
         <HookesItem text={text4}/>
+        <span className={'enableHookesPage__number'}>2/2</span>
       </div>
     </div>
   )
