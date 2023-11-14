@@ -9,6 +9,10 @@
   &__headerContainer {
     margin-bottom: 14px;
   }
+  &__number{
+  margin-top: 135px;
+    align-self: center;
+  }
 }
 
 .textContainer {
@@ -120,6 +124,4 @@ body {
 }
 .imageArrow{
   display: flex;
-  //position: relative;
-  //left: 100px;
 }

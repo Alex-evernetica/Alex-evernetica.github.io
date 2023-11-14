@@ -50,9 +50,9 @@ const SecondStep = () => {
     }
   }, [])
 
-  useEffect(() => {
-    localStorage.setItem('hookesProgreesUrl', '/secondStep')
-  } , [])
+  // useEffect(() => {
+  //   localStorage.setItem('hookesProgreesUrl', '/secondStep')
+  // } , [])
   // useEffect(() => {
   //   if (element?.innerHTML) {
   //     navigation('/safari-ext-helper/finalPage')
@@ -82,6 +82,7 @@ const SecondStep = () => {
         <HookesItem text={text2}/>
         <HookesItem text={text3}/>
         <HookesItem text={text4}/>
+        <span className={'enableHookesPage__number'}>2/2</span>
       </div>
     </div>
   )
