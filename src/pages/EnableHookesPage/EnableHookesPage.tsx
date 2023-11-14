@@ -63,6 +63,7 @@ const EnableHookesPage = () => {
             <div className={'itemsContainer'}>
                 <HookesItem text={text1}/>
                 <HookesItem text={text2}/>
+                <span className={'enableHookesPage__number'}>1/2</span>
             </div>
         </div>
     );
