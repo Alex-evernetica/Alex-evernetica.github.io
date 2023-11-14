@@ -35,12 +35,12 @@ const EnableHookesPage = () => {
       <strong key="5">"Done"</strong>,
       ];
 
-    useEffect(() => {
-       const  hookesProgreesUrl =    localStorage.getItem('hookesProgreesUrl')
-        if (hookesProgreesUrl) {
-            navigate(hookesProgreesUrl)
-        }
-    }, [navigate])
+    // useEffect(() => {
+    //    // const  hookesProgreesUrl =    localStorage.getItem('hookesProgreesUrl')
+    //     // if (hookesProgreesUrl) {
+    //     //     navigate(hookesProgreesUrl)
+    //     // }
+    // }, [navigate])
 
     return (
         <div className={'enableHookesPage'}>
