@@ -4,23 +4,22 @@ import HookesHeader from '../components/HookesHeader/HookesHeader'
 import './EnableHookesPage/EnableHookesPage.scss'
 import HookesItem from '../components/HookesItem/HookesItem'
 import AlwaysAllow from '../assets/icons/AlwayAllow.svg'
-import aaIcon from '../assets/icons/AaIcon.svg';
 import aAonEvery from '../assets/icons/aAonEvery.svg';
-import exclamationPoint from '../assets/icons/exclamationPoint.svg';
+import Aa from "../assets/icons/Aa.png";
+import Exclamation from "../assets/icons/exclamation.png";
 
 const SecondStep = () => {
   // const element = document.getElementById('actionButton')
   const navigation = useNavigate()
-  // console.log(element)
   const text1 = [
     <span key="1">1. Tap the </span>,
-    <img key="2" className={'hookesItem__image'} src={aaIcon} alt={'Hookes item image'}/>,
+    <img key="2" className={'hookesItem__image'} src={Aa} alt={'aA'}/>,
     <span key="3">in the address bar</span>,
   ]
 
   const text2 = [
     <span key="1">2. Tap the </span>,
-    <img key="2" className={'hookesItem__image'} src={exclamationPoint} alt={'Hookes item image'}/>,
+    <img key="2" className={'hookesItem__image'} src={Exclamation} alt={'aA'}/>,
     <span key="3">by the </span>,
     <strong key="4">"Hookes" extension</strong>,
   ]
