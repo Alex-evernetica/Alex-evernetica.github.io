@@ -8,8 +8,11 @@ import blackPuzzle from '../../assets/icons/BlackPuzzle.svg';
 import toggle from '../../assets/icons/Switch.png';
 import HookesItem from "../../components/HookesItem/HookesItem";
 import {useNavigate} from "react-router-dom";
+import Aa from "../../assets/icons/Aa.png";
 
-const EnableHookesPage = () => {
+console.log(aaIcon);
+
+  const EnableHookesPage = () => {
     const element = document.getElementById('actionButton')
     const navigate = useNavigate()
     useEffect(()=>{
@@ -20,12 +23,13 @@ const EnableHookesPage = () => {
     }, [element, navigate])
 
     const text1 = [
-        <span key="1">1. Tap the</span>,
-        <img className={'hookesItem__image'} src={aaIcon} alt={'Hookes item image'}/>,
-        <span key="2">in the address bar, </span>,
-        <span >then go to </span>,
-        <strong>Manage Extensions</strong>,
-        <img className={'hookesItem__image'} src={blackPuzzle} alt={'Hookes item image'}/>,
+      <span key="1">1. Tap the</span>,
+      <img key="2" className={'hookesItem__image'} src={Aa} alt={'aA'}/>,
+      // aa,
+      <span key="2">in the address bar, </span>,
+      <span>then go to </span>,
+      <strong>Manage Extensions</strong>,
+      <img className={'hookesItem__image'} src={blackPuzzle} alt={'Hookes item image'}/>,
     ];
     const text2 = [
       <span key="1">2. Toggle on </span>,
@@ -35,12 +39,12 @@ const EnableHookesPage = () => {
       <strong key="5">"Done"</strong>,
       ];
 
-    useEffect(() => {
-       const  hookesProgreesUrl =    localStorage.getItem('hookesProgreesUrl')
-        if (hookesProgreesUrl) {
-            navigate(hookesProgreesUrl)
-        }
-    }, [navigate])
+    // useEffect(() => {
+    //    const  hookesProgreesUrl =    localStorage.getItem('hookesProgreesUrl')
+    //     if (hookesProgreesUrl) {
+    //         navigate(hookesProgreesUrl)
+    //     }
+    // }, [navigate])
 
     return (
         <div className={'enableHookesPage'}>
