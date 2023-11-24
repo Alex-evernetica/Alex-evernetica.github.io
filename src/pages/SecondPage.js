@@ -9,7 +9,6 @@ import Aa from "../assets/icons/Aa.png";
 import Exclamation from "../assets/icons/exclamation.png";
 
 const SecondStep = () => {
-  // const element = document.getElementById('actionButton')
   const navigation = useNavigate()
   const text1 = [
     <span key="1">1. Tap the </span>,
@@ -49,15 +48,6 @@ const SecondStep = () => {
       sessionStorage.setItem('isUpdated', true)
     }
   }, [])
-
-  // useEffect(() => {
-  //   localStorage.setItem('hookesProgreesUrl', '/secondStep')
-  // } , [])
-  // useEffect(() => {
-  //   if (element?.innerHTML) {
-  //     navigation('/safari-ext-helper/finalPage')
-  //   }
-  // }, [element, navigation])
 
   const handleClick = (e) => {
     e.stopPropagation()

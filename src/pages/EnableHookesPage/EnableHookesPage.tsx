@@ -10,7 +10,6 @@ import HookesItem from "../../components/HookesItem/HookesItem";
 import {useNavigate} from "react-router-dom";
 import Aa from "../../assets/icons/Aa.png";
 
-console.log(aaIcon);
 
   const EnableHookesPage = () => {
     const element = document.getElementById('actionButton')
@@ -25,7 +24,6 @@ console.log(aaIcon);
     const text1 = [
       <span key="1">1. Tap the</span>,
       <img key="2" className={'hookesItem__image'} src={Aa} alt={'aA'}/>,
-      // aa,
       <span key="2">in the address bar, </span>,
       <span>then go to </span>,
       <strong>Manage Extensions</strong>,

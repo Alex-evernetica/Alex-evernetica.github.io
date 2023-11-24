@@ -4,10 +4,6 @@ import EnableHookesPage from "./pages/EnableHookesPage/EnableHookesPage";
 import SecondPage from "./pages/SecondPage";
 import FinalPage from "./pages/FinalPage";
 
-// <Route path="/safari-ext-helper" element={<EnableHookesPage/>}/>
-// <Route path="/secondStep" element={<SecondPage/>}/>
-// <Route path="/finalPage" element={<FinalPage/>}/>
-
 const router = createHashRouter([
     {
         path: "/",
@@ -41,8 +37,6 @@ export const NavigationContext = createContext<RouterType>(contextInitialState);
 
 function App() {
     const [backUrl, setBackUrl] = useState("")
-    console.log("backUrl");
-    console.log(backUrl);
 
     useEffect(() => {
         let params = new URLSearchParams(document.location.search);
